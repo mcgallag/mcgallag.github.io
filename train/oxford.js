@@ -48,7 +48,6 @@ function setup() {
   }
 
   let strip = new PIXI.mesh.Rope(Resources["OXFORD_TRAIN.png"].texture, points);
-  strip.transform
   app.stage.addChild(strip);
 
   app.ticker.add(delta => draw(delta));
