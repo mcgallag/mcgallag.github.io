@@ -31,6 +31,7 @@ Loader.add("OXFORD_TRAIN.png")
 
 let points = [];
 let count = 0.0;
+let pointcount = 16;
 let xinterval;
 
 function setup() {
@@ -39,10 +40,10 @@ function setup() {
   let rise = Math.abs(point2.y - point1.y);
   let run = Math.abs(point2.x - point1.x);
 
-  xinterval = (run / 25.0);
-  let yinterval = (rise / 25.0);
+  xinterval = (run / pointcount);
+  let yinterval = (rise / pointcount);
 
-  for (let i = 0; i <= 25; i++) {
+  for (let i = 0; i <= pointcount; i++) {
     points.push(new Point(point1.x + (xinterval * i), point1.y - (yinterval * i)));
   }
 
