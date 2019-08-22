@@ -1,0 +1,707 @@
+{
+  "nodes": [
+    {
+      "id": "17-AR",
+      "group": 2
+    },
+    {
+      "id": "41-GS",
+      "group": 1
+    },
+    {
+      "id": "44-P-1M",
+      "group": 2
+    },
+    {
+      "id": "119CE",
+      "group": 4
+    },
+    {
+      "id": "Aldebran",
+      "group": 2
+    },
+    {
+      "id": "Auriga",
+      "group": 1
+    },
+    {
+      "id": "Beta",
+      "group": 2
+    },
+    {
+      "id": "Blockade Point Alpha",
+      "group": 2
+    },
+    {
+      "id": "Blockade Point Charlie",
+      "group": 2
+    },
+    {
+      "id": "Blockade Point Tango",
+      "group": 3
+    },
+    {
+      "id": "Capella",
+      "group": 4
+    },
+    {
+      "id": "Castor",
+      "group": 1
+    },
+    {
+      "id": "CMF-A",
+      "group": 2
+    },
+    {
+      "id": "CM-N1054",
+      "group": 1
+    },
+    {
+      "id": "Crab-12",
+      "group": 2
+    },
+    {
+      "id": "Death",
+      "group": 2
+    },
+    {
+      "id": "Delta",
+      "group": 2
+    },
+    {
+      "id": "Delta Prime",
+      "group": 1
+    },
+    {
+      "id": "DN-N1912",
+      "group": 1
+    },
+    {
+      "id": "Eden",
+      "group": 2
+    },
+    {
+      "id": "Famine",
+      "group": 3
+    },
+    {
+      "id": "Freyja",
+      "group": 2
+    },
+    {
+      "id": "Gamma",
+      "group": 2
+    },
+    {
+      "id": "Hind's Variable North",
+      "group": 2
+    },
+    {
+      "id": "Hyades",
+      "group": 2
+    },
+    {
+      "id": "J900",
+      "group": 2
+    },
+    {
+      "id": "Junction",
+      "group": 6
+    },
+    {
+      "id": "KM-252",
+      "group": 1
+    },
+    {
+      "id": "Lisacc",
+      "group": 1
+    },
+    {
+      "id": "Mah'Rahn",
+      "group": 1
+    },
+    {
+      "id": "Manchester",
+      "group": 1
+    },
+    {
+      "id": "Metsor",
+      "group": 2
+    },
+    {
+      "id": "Midgard",
+      "group": 2
+    },
+    {
+      "id": "ND-57",
+      "group": 1
+    },
+    {
+      "id": "New Caledonia",
+      "group": 4
+    },
+    {
+      "id": "Newcastle",
+      "group": 4
+    },
+    {
+      "id": "New Constantinople",
+      "group": 7
+    },
+    {
+      "id": "New Detroit",
+      "group": 8
+    },
+    {
+      "id": "Nexus",
+      "group": 4
+    },
+    {
+      "id": "Nitir",
+      "group": 3
+    },
+    {
+      "id": "Oxford",
+      "group": 3
+    },
+    {
+      "id": "Padre",
+      "group": 1
+    },
+    {
+      "id": "Palan",
+      "group": 2
+    },
+    {
+      "id": "Pender's Star",
+      "group": 2
+    },
+    {
+      "id": "Pentonville",
+      "group": 1
+    },
+    {
+      "id": "Perry",
+      "group": 7
+    },
+    {
+      "id": "Pestilence",
+      "group": 2
+    },
+    {
+      "id": "Pollux",
+      "group": 1
+    },
+    {
+      "id": "Prasepe",
+      "group": 1
+    },
+    {
+      "id": "Pyrenees",
+      "group": 3
+    },
+    {
+      "id": "Ragnarok",
+      "group": 2
+    },
+    {
+      "id": "Raxis",
+      "group": 1
+    },
+    {
+      "id": "Regallis",
+      "group": 3
+    },
+    {
+      "id": "Rikel",
+      "group": 4
+    },
+    {
+      "id": "Rygannon",
+      "group": 2
+    },
+    {
+      "id": "Saxtogue",
+      "group": 2
+    },
+    {
+      "id": "Shangri La",
+      "group": 1
+    },
+    {
+      "id": "Sherwood",
+      "group": 5
+    },
+    {
+      "id": "Sumn-Kp'ta",
+      "group": 2
+    },
+    {
+      "id": "Surtur",
+      "group": 3
+    },
+    {
+      "id": "Telar",
+      "group": 3
+    },
+    {
+      "id": "Tingerhoff",
+      "group": 4
+    },
+    {
+      "id": "Troy",
+      "group": 4
+    },
+    {
+      "id": "Tr'Pakh",
+      "group": 2
+    },
+    {
+      "id": "Valhalla",
+      "group": 2
+    },
+    {
+      "id": "Varnus",
+      "group": 1
+    },
+    {
+      "id": "War",
+      "group": 2
+    },
+    {
+      "id": "XXN-1927",
+      "group": 5
+    },
+    {
+      "id": "Xytani",
+      "group": 2
+    }
+  ],
+  "links": [
+    {
+      "source": "17-AR",
+      "target": "New Caledonia",
+      "value": 1
+    },
+    {
+      "source": "17-AR",
+      "target": "Telar",
+      "value": 1
+    },
+    {
+      "source": "41-GS",
+      "target": "Surtur",
+      "value": 1
+    },
+    {
+      "source": "44-P-1M",
+      "target": "New Constantinople",
+      "value": 1
+    },
+    {
+      "source": "44-P-1M",
+      "target": "Rikel",
+      "value": 1
+    },
+    {
+      "source": "119CE",
+      "target": "Padre",
+      "value": 1
+    },
+    {
+      "source": "119CE",
+      "target": "Junction",
+      "value": 1
+    },
+    {
+      "source": "119CE",
+      "target": "XXN-1927",
+      "value": 1
+    },
+    {
+      "source": "119CE",
+      "target": "Pentonville",
+      "value": 1
+    },
+    {
+      "source": "Aldebran",
+      "target": "New Constantinople",
+      "value": 1
+    },
+    {
+      "source": "Aldebran",
+      "target": "Hind's Variable North",
+      "value": 1
+    },
+    {
+      "source": "Auriga",
+      "target": "Newcastle",
+      "value": 1
+    },
+    {
+      "source": "Beta",
+      "target": "Gamma",
+      "value": 1
+    },
+    {
+      "source": "Beta",
+      "target": "Delta",
+      "value": 1
+    },
+    {
+      "source": "Blockade Point Alpha",
+      "target": "Ragnarok",
+      "value": 1
+    },
+    {
+      "source": "Blockade Point Alpha",
+      "target": "Tr'Pakh",
+      "value": 1
+    },
+    {
+      "source": "Blockade Point Charlie",
+      "target": "Surtur",
+      "value": 1
+    },
+    {
+      "source": "Blockade Point Charlie",
+      "target": "Hyades",
+      "value": 1
+    },
+    {
+      "source": "Blockade Point Tango",
+      "target": "Lisacc",
+      "value": 1
+    },
+    {
+      "source": "Blockade Point Tango",
+      "target": "Nitir",
+      "value": 1
+    },
+    {
+      "source": "Blockade Point Tango",
+      "target": "Mah'Rahn",
+      "value": 1
+    },
+    {
+      "source": "Capella",
+      "target": "Crab-12",
+      "value": 1
+    },
+    {
+      "source": "Capella",
+      "target": "Nexus",
+      "value": 1
+    },
+    {
+      "source": "Capella",
+      "target": "Sherwood",
+      "value": 1
+    },
+    {
+      "source": "Capella",
+      "target": "Famine",
+      "value": 1
+    },
+    {
+      "source": "Castor",
+      "target": "Junction",
+      "value": 1
+    },
+    {
+      "source": "CMF-A",
+      "target": "Tingerhoff",
+      "value": 1
+    },
+    {
+      "source": "CMF-A",
+      "target": "Nitir",
+      "value": 1
+    },
+    {
+      "source": "CM-N1054",
+      "target": "Pyrenees",
+      "value": 1
+    },
+    {
+      "source": "Crab-12",
+      "target": "New Caledonia",
+      "value": 1
+    },
+    {
+      "source": "Death",
+      "target": "Pestilence",
+      "value": 1
+    },
+    {
+      "source": "Death",
+      "target": "Famine",
+      "value": 1
+    },
+    {
+      "source": "Delta",
+      "target": "Rygannon",
+      "value": 1
+    },
+    {
+      "source": "Delta Prime",
+      "target": "Gamma",
+      "value": 1
+    },
+    {
+      "source": "DN-N1912",
+      "target": "Hind's Variable North",
+      "value": 1
+    },
+    {
+      "source": "Famine",
+      "target": "Sherwood",
+      "value": 1
+    },
+    {
+      "source": "Freyja",
+      "target": "Regallis",
+      "value": 1
+    },
+    {
+      "source": "Freyja",
+      "target": "Pyrenees",
+      "value": 1
+    },
+    {
+      "source": "Hyades",
+      "target": "Sumn-Kp'ta",
+      "value": 1
+    },
+    {
+      "source": "J900",
+      "target": "Junction",
+      "value": 1
+    },
+    {
+      "source": "J900",
+      "target": "Telar",
+      "value": 1
+    },
+    {
+      "source": "Junction",
+      "target": "Pender's Star",
+      "value": 1
+    },
+    {
+      "source": "Junction",
+      "target": "Nexus",
+      "value": 1
+    },
+    {
+      "source": "Junction",
+      "target": "New Constantinople",
+      "value": 1
+    },
+    {
+      "source": "KM-252",
+      "target": "Nexus",
+      "value": 1
+    },
+    {
+      "source": "Manchester",
+      "target": "New Detroit",
+      "value": 1
+    },
+    {
+      "source": "Metsor",
+      "target": "XXN-1927",
+      "value": 1
+    },
+    {
+      "source": "Metsor",
+      "target": "Newcastle",
+      "value": 1
+    },
+    {
+      "source": "Midgard",
+      "target": "Perry",
+      "value": 1
+    },
+    {
+      "source": "Midgard",
+      "target": "Rikel",
+      "value": 1
+    },
+    {
+      "source": "ND-57",
+      "target": "New Detroit",
+      "value": 1
+    },
+    {
+      "source": "New Caledonia",
+      "target": "Prasepe",
+      "value": 1
+    },
+    {
+      "source": "New Caledonia",
+      "target": "Sherwood",
+      "value": 1
+    },
+    {
+      "source": "Newcastle",
+      "target": "Perry",
+      "value": 1
+    },
+    {
+      "source": "New Constantinople",
+      "target": "Varnus",
+      "value": 1
+    },
+    {
+      "source": "New Constantinople",
+      "target": "New Detroit",
+      "value": 1
+    },
+    {
+      "source": "New Constantinople",
+      "target": "XXN-1927",
+      "value": 1
+    },
+    {
+      "source": "New Constantinople",
+      "target": "Newcastle",
+      "value": 1
+    },
+    {
+      "source": "New Detroit",
+      "target": "Saxtogue",
+      "value": 1
+    },
+    {
+      "source": "New Detroit",
+      "target": "Raxis",
+      "value": 1
+    },
+    {
+      "source": "New Detroit",
+      "target": "XXN-1927",
+      "value": 1
+    },
+    {
+      "source": "New Detroit",
+      "target": "Perry",
+      "value": 1
+    },
+    {
+      "source": "New Detroit",
+      "target": "Rikel",
+      "value": 1
+    },
+    {
+      "source": "Nexus",
+      "target": "Tingerhoff",
+      "value": 1
+    },
+    {
+      "source": "Nitir",
+      "target": "Perry",
+      "value": 1
+    },
+    {
+      "source": "Oxford",
+      "target": "Saxtogue",
+      "value": 1
+    },
+    {
+      "source": "Oxford",
+      "target": "XXN-1927",
+      "value": 1
+    },
+    {
+      "source": "Oxford",
+      "target": "Shangri La",
+      "value": 1
+    },
+    {
+      "source": "Palan",
+      "target": "Xytani",
+      "value": 1
+    },
+    {
+      "source": "Palan",
+      "target": "Tingerhoff",
+      "value": 1
+    },
+    {
+      "source": "Pender's Star",
+      "target": "Troy",
+      "value": 1
+    },
+    {
+      "source": "Perry",
+      "target": "Ragnarok",
+      "value": 1
+    },
+    {
+      "source": "Perry",
+      "target": "Tingerhoff",
+      "value": 1
+    },
+    {
+      "source": "Perry",
+      "target": "Surtur",
+      "value": 1
+    },
+    {
+      "source": "Pestilence",
+      "target": "War",
+      "value": 1
+    },
+    {
+      "source": "Pollux",
+      "target": "Sherwood",
+      "value": 1
+    },
+    {
+      "source": "Pyrenees",
+      "target": "Troy",
+      "value": 1
+    },
+    {
+      "source": "Regallis",
+      "target": "Troy",
+      "value": 1
+    },
+    {
+      "source": "Regallis",
+      "target": "Sherwood",
+      "value": 1
+    },
+    {
+      "source": "Rygannon",
+      "target": "Xytani",
+      "value": 1
+    },
+    {
+      "source": "Sumn-Kp'ta",
+      "target": "Tr'Pakh",
+      "value": 1
+    },
+    {
+      "source": "Eden",
+      "target": "Valhalla",
+      "value": 1
+    },
+    {
+      "source": "Eden",
+      "target": "Rikel",
+      "value": 1
+    },
+    {
+      "source": "Telar",
+      "target": "Valhalla",
+      "value": 1
+    },
+    {
+      "source": "Troy",
+      "target": "War",
+      "value": 1
+    }
+  ]
+}
