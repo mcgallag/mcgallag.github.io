@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+
+    <title>Trelane's Message Decoder</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="decryptForm">
+        <div class="form-group">
+          <label for="plainTextMessageArea">Plaintext Message</label>
+          <textarea class="form-control" id="plainTextMessageArea" placeholder="Plaintext message goes here" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="publicKeyTextArea">Public Key</label>
+          <textarea required class="form-control" id="publicKeyTextArea" placeholder="Public key goes here" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form-group">
+          <button id="encryptButton" class="btn btn-primary">Encrypt</button>
+        </div>
+        <div class="form-group">
+          <label for="cipherTextMessageArea">Encrypted Message</label>
+          <textarea readonly required class="form-control" id="cipherTextMessageArea" placeholder="Encrypted message goes here" cols="30" rows="10"></textarea>
+        </div>
+      </form>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./lib/jquery.min.js"></script>
+    <script src="./lib/popper.min.js"></script>
+    <script src="./lib/bootstrap.min.js"></script>
+    <script src="./lib/openpgp.min.js"></script>
+    <script>
+      class TrelaneDecryptionWrapper {
+        constructor() {
+          this.cipherText = null;
+          this.privateKey = null;
+          this.password = null;
+          this.plainText = null;
+          this.publicKey = null;
+          this.email = null;
+          this.name = null;
+        }
+
+        async encrypt() {
+          await openpgp.initWorker({
+            path: "./lib/openpgp.worker.js"
+          });
+
+          const publicKey = this.publicKey;
+          const plainText = this.plainText;
+
+          const encrypted = await openpgp.encrypt({
+            message: openpgp.message.fromText(plainText),
+            publicKeys: (await openpgp.key.readArmored(publicKey)).keys,
+          });
+          this.cipherText = encrypted.data;
+
+          document.getElementById("cipherTextMessageArea").value = this.cipherText;
+        }
+      }
+
+      function main() {
+        let decrypt = new TrelaneDecryptionWrapper();
+        document.getElementById("encryptButton").addEventListener("click", (evt) => {
+          decrypt.plainText = document.getElementById("plainTextMessageArea").value;
+          decrypt.publicKey = document.getElementById("publicKeyTextArea").value;
+          decrypt.encrypt();
+          evt.preventDefault();
+        });
+      }
+
+      window.addEventListener("load", main);
+    </script>
+  </body>
+
+</html>

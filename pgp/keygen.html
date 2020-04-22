@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+
+    <title>Trelane's Key Generator</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="keyGenForm">
+        <div class="container">
+
+          <div class="row pt-3">
+            <label for="keyGenName" class="col-sm-auto">Name</label>
+            <input required class="col form-control" type="text" id="keyGenName">
+          </div>
+
+          <div class="row pt-2">
+            <label for="keyGenEmail" class="col-sm-auto">E-Mail</label>
+            <input required class="col form-control" type="email" id="keyGenEmail">
+          </div>
+          <div class="row pt-2">
+            <label for="keyGenPassword" class="col-sm-auto">Password</label>
+            <input required class="col form-control" type="password" id="keyGenPassword">
+          </div>
+          <div class="form-group">
+            <button id="generateButton" class="btn btn-primary">Generate</button>
+          </div>
+          <div class="form-group">
+            <label for="keyGenPublicKey">Public Key</label>
+            <textarea readonly class="form-control text-monospace" id="keyGenPublicKey" placeholder="Public key goes here" cols="30" rows="10"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="keyGenPrivateKey">Private Key</label>
+            <textarea readonly class="form-control text-monospace" id="keyGenPrivateKey" placeholder="Private key goes here" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+      </form>
+
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./lib/jquery.min.js"></script>
+    <script src="./lib/popper.min.js"></script>
+    <script src="./lib/bootstrap.min.js"></script>
+    <script src="./lib/openpgp.min.js"></script>
+    <script>
+      class TrelaneDecryptionWrapper {
+        constructor() {
+          this.cipherText = null;
+          this.privateKey = null;
+          this.password = null;
+          this.plainText = null;
+          this.publicKey = null;
+          this.email = null;
+          this.name = null;
+        }
+
+        async keygen() {
+          await openpgp.initWorker({
+            path: "./lib/openpgp.worker.js"
+          });
+
+          const {
+            privateKeyArmored,
+            publicKeyArmored,
+            revocationCertificate
+          } = await openpgp.generateKey({
+            userIds: [{
+              name: this.name,
+              email: this.email
+            }],
+            rsaBits: 4096,
+            passphrase: this.password
+          });
+          this.privateKey = privateKeyArmored;
+          this.publicKey = publicKeyArmored;
+          this.revocationCertificate = revocationCertificate;
+          document.getElementById("keyGenPrivateKey").value = this.privateKey;
+          document.getElementById("keyGenPublicKey").value = this.publicKey;
+        }
+      }
+
+      function main() {
+        let decrypt = new TrelaneDecryptionWrapper();
+        document.getElementById("generateButton").addEventListener("click", (evt) => {
+          decrypt.name = document.getElementById("keyGenName").value;
+          decrypt.password = document.getElementById("keyGenPassword").value;
+          decrypt.email = document.getElementById("keyGenEmail").value;
+          decrypt.keygen();
+          evt.preventDefault();
+        })
+      }
+
+      window.addEventListener("load", main);
+    </script>
+  </body>
+
+</html>
