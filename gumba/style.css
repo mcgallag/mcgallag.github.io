@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Impact";
+  src: url("./impact.ttf") format("truetype");
+}
+
+body {
+  background-color: #1c1c1c;
+}
+
+#gumba {
+  display: none;
+}
+
+#main {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#main > * {
+  margin: 0 0.5rem;
+}
+
+#form {
+  display: flex;
+  flex-flow: column nowrap;
+  color: white;
+}
